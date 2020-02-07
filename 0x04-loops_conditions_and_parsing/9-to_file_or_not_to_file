@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # This script is displaying "Holberton School" 10 times
 namef="holbertonschool"
-if [ -e "" ];
+if [ -e "$namef" ];
 then
 	echo "$namef file exist"
 	if [ -s "$namef" ];
