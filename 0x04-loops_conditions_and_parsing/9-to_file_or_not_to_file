@@ -1,21 +1,18 @@
 #!/usr/bin/env bash
 # This script is displaying "Holberton School" 10 times
-a=$(file holbertonschool | cut -d ' ' -f2)
-if [ "$a" == "cannot" ]
+if [ -e "holbertonschool" ]
 then
-	echo "holbertonschool file does not exist"
-else
-	echo "holbertonschool file exists"
-	if [ "$a" == "empty" ]
+	echo "holbertonschool file exist"
+	if [ -s "holbertonschool" ]
 	then
-		echo "holbertonschool file is empty"
-	else
 		echo "holbertonschool file is not empty"
-	fi
-	if [ "$a" == "directory" ]
-	then
-		:
 	else
+		echo "holbertonschool file is empty"
+	fi
+	if [ -f "holbertonschool" ]
+	then
 		echo "holbertonschool is a regular file"
 	fi
+else
+	echo "holbertonschool file does not exists"
 fi
