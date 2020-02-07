@@ -1,16 +1,16 @@
 #!/usr/bin/env bash
 # This script is displaying "Holberton School" 10 times
 namef="holbertonschool"
-if [ -e "" ]
+if [ -e "" ];
 then
 	echo "$namef file exist"
-	if [ -s "$namef" ]
+	if [ -s "$namef" ];
 	then
 		echo "$namef file is not empty"
 	else
 		echo "$namef file is empty"
 	fi
-	if [ -f "$namef" ]
+	if [ -f "$namef" ];
 	then
 		echo "$namef is a regular file"
 	fi
