@@ -1,18 +1,19 @@
 #!/usr/bin/env bash
 # This script is displaying "Holberton School" 10 times
-if [ -e "holbertonschool" ]
+namef="holbertonschool"
+if [ -e "" ]
 then
-	echo "holbertonschool file exist"
-	if [ -s "holbertonschool" ]
+	echo "$namef file exist"
+	if [ -s "$namef" ]
 	then
-		echo "holbertonschool file is not empty"
+		echo "$namef file is not empty"
 	else
-		echo "holbertonschool file is empty"
+		echo "$namef file is empty"
 	fi
-	if [ -f "holbertonschool" ]
+	if [ -f "$namef" ]
 	then
-		echo "holbertonschool is a regular file"
+		echo "$namef is a regular file"
 	fi
 else
-	echo "holbertonschool file does not exists"
+	echo "$namef file does not exists"
 fi
