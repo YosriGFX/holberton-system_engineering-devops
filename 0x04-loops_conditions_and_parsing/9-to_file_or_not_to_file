@@ -8,7 +8,7 @@ else
 	echo "holbertonschool file exists"
 	if [ "$a" == "empty" ]
 	then
-		echo "holbertonschool is empty"
+		echo "holbertonschool file is empty"
 	else
 		echo "holbertonschool file is not empty"
 	fi
