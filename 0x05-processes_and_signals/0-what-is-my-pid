@@ -1,2 +1,4 @@
 #!/bin/bash
+# displays its own PID
+
 echo $$
