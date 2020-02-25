@@ -25,7 +25,7 @@ _by Sylvain Kalache_
 
 #### 2. Change your home IP
 
->Write a Bash script that configures an Ubuntu server with the below requirements.
+> Write a Bash script that configures an Ubuntu server with the below requirements.
 ```
     Requirements:
     -   `localhost`  resolves to  `127.0.0.2`
@@ -34,7 +34,7 @@ _by Sylvain Kalache_
 
 #### 3. Show attached IPs
 
->Write a Bash script that displays all active IPv4 IPs on the machine it’s executed on.
+> Write a Bash script that displays all active IPv4 IPs on the machine it’s executed on.
 ```
 sylvain@ubuntu$ ./3-show_attached_IPs | cat -e
 10.0.2.15$
