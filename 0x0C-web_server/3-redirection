@@ -6,7 +6,7 @@ sudo apt-get -y upgrade
 sudo apt-get -y install nginx
 sudo service nginx start
 
-new="\\\trewrite ^/redirect_me https://GitHub.com/YosriGFX permanent;"
+new="\\\trewrite ^/redirect_me https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;"
 sudo sed -i "29i $new" /etc/nginx/sites-available/default
 
 sudo service nginx restart
