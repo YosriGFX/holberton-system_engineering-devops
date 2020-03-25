@@ -5,7 +5,9 @@ sudo apt-get -y update
 sudo apt-get -y upgrade
 sudo apt-get -y install nginx
 sudo service nginx start
-newlines="\\\trewrite ^/redirect_me https://GitHub.com/YosriGFX permanent;"
-sudo sed -i "26i $newlines" /etc/nginx/sites-available/default
+
+new="\\\trewrite ^/redirect_me https://GitHub.com/YosriGFX permanent;"
+sudo sed -i "29i $new" /etc/nginx/sites-available/default
+
 sudo service nginx restart
 sudo service nginx reload
