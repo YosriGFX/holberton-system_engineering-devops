@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# ink sites-enabled to sites-available
+ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+sudo service nginx start
+rm /run/nginx.pid
