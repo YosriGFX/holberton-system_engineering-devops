@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# automate the task of creating a custom HTTP header response
+# Install and configure HAproxy
 
 sudo apt-get -y update
 sudo apt-get -y upgrade
