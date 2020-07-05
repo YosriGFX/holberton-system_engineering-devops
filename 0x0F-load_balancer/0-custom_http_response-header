@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Install and configure HAproxy
+# need to configure web-02 to be identical to web-01
 
 sudo apt-get -y update
 sudo apt-get -y upgrade
