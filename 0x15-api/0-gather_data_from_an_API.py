@@ -14,19 +14,15 @@ if __name__ == '__main__':
     )
     user = requests.get(
         Link,
-        verify=False
     ).json()
-    Link = "https://jsonplaceholder.typicode.com/RequestDatas\
-        ?userId={}".format(
+    Link = "https://jsonplaceholder.typicode.com/todos?userId={}".format(
         UID
     )
     RequestData = requests.get(
         Link,
-        verify=False
     ).json()
     CTasks = []
     for currect_Task in RequestData:
-        print(currect_Task)
         if currect_Task.get("completed"):
             CTasks.append(currect_Task.get("title"))
     print("Employee {} is done with tasks({}/{}):".
