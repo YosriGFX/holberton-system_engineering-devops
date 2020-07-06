@@ -25,13 +25,11 @@ if __name__ == '__main__':
     tasks = []
     for task in RequestData:
         tasks.append(
-            [
-                {
-                    "task": task.get("title"),
-                    "username": username,
-                    "completed": task.get("completed")
-                }
-            ]
+            {
+                "task": task.get("title"),
+                "username": username,
+                "completed": task.get("completed")
+            }
         )
     jsonOBJ = {}
     jsonOBJ[UID] = tasks
