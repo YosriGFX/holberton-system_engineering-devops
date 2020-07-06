@@ -21,11 +21,14 @@ if __name__ == '__main__':
     RequestData = requests.get(
         Link,
     ).json()
-    CTasks = []
-    for currect_Task in RequestData:
-        if currect_Task.get("completed"):
-            CTasks.append(currect_Task.get("title"))
-    print("Employee {} is done with tasks({}/{}):".
-          format(user.get('name'), len(CTasks), len(RequestData)))
-    for currect_Task in CTasks:
-        print("\t {}".format(currect_Task))
+    with open("{}.csv".format(user_id), 'w', newline='') as csvfile:
+        taskwriter = csv.writer(csvfile, quoting=csv.QUOTE_ALL)
+        for task in RequestData:
+            taskwriter.writerow(
+                [
+                    int(user_id),
+                    user.get('username'),
+                    task.get('completed'),
+                    task.get('title')
+                ]
+            )
